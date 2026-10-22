@@ -1,0 +1,14 @@
+== naga 29.0.3
+--- naga reads regtile.spv -> wgsl
+exit=0
+--- naga reads mma.spv -> wgsl
+[WARN  naga::front::spv] Unknown capability VulkanMemoryModelDeviceScope
+[WARN  naga::front::spv] Unknown capability CooperativeMatrixKHR
+unsupported extension SPV_KHR_cooperative_matrix
+exit=1
+== tint
+--- tint reads regtile.spv -> wgsl
+exit=0
+--- tint reads mma.spv -> wgsl
+Failed to parse SPIR-V: SPIR-V extension 'SPV_KHR_cooperative_matrix' is not supported
+exit=1
