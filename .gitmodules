@@ -1,0 +1,10 @@
+[submodule "llvm-project"]
+	path = llvm-project
+	url = https://github.com/SharmaRithik/llvm-project.git
+	branch = mlir-webgpu
+	shallow = true
+[submodule "llama.cpp"]
+	path = llama.cpp
+	url = https://github.com/SharmaRithik/llama.cpp.git
+	branch = mlir-webgpu
+	shallow = true
